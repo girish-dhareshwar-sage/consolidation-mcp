@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 import re
 
@@ -14,8 +15,8 @@ FIELD_GROUPS = json.loads(
     Path("project/group_field_map.json").read_text(encoding="utf-8")
 )
 
-INTACCT_FILTER_URL = "https://api.intacct.com/ia/api/v1/services/core/query"
-INTACCT_CONSOLIDATION_URL="https://api.intacct.com/ia/api/v1-beta2/services/consolidation/book/consolidate"
+INTACCT_FILTER_URL = os.getenv("INTACCT_FILTER_URL")
+INTACCT_CONSOLIDATION_URL = os.getenv("INTACCT_CONSOLIDATION_URL")
 
 # =====================================================
 # intent map
