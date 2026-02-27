@@ -1,0 +1,75 @@
+{
+  "basic": {
+    "key": "key",
+    "id": "id",
+    "description": "description",
+    "status": "status",
+    "href": "href"
+  },
+
+  "bookSettings": {
+    "book type": "bookType",
+    "accounting method": "accountingMethod",
+    "historical rate date type": "historicalRateDateType",
+    "legacy": "isLegacyBook"
+  },
+
+  "currency": {
+    "currency": "multiCurrency.currency",
+    "exchange rate type": "multiCurrency.exchangeRateType",
+    "bs translation": "multiCurrency.translationMethod.balanceSheetTranslationMethod",
+    "income translation": "multiCurrency.translationMethod.incomeTranslationMethod"
+  },
+
+  "account": {
+    "net asset account key": "multiCurrency.cumulativeTranslationAdjustment.netAssetGLAccount.key",
+    "net asset account id": "multiCurrency.cumulativeTranslationAdjustment.netAssetGLAccount.id",
+    "net asset account name": "multiCurrency.cumulativeTranslationAdjustment.netAssetGLAccount.name",
+
+    "net income account key": "multiCurrency.cumulativeTranslationAdjustment.netIncomeGLAccount.key",
+    "net income account id": "multiCurrency.cumulativeTranslationAdjustment.netIncomeGLAccount.id",
+    "net income account name": "multiCurrency.cumulativeTranslationAdjustment.netIncomeGLAccount.name"
+  },
+
+  "journal": {
+    "journal id": "bookJournal.id",
+    "journal name": "bookJournal.name",
+    "stat journal id": "statisticalJournal.id",
+    "stat journal name": "statisticalJournal.name"
+  },
+
+  "budget": {
+    "budget key": "budget.key",
+    "budget id": "budget.id"
+  },
+
+  "department": {
+    "department key": "department.key",
+    "department id": "department.id",
+    "department name": "department.name"
+  },
+
+  "elimination": {
+    "elimination entity": "elimination.entity",
+    "auto elimination": "elimination.enableInterEntityAutoElimination",
+    "elimination by affiliate": "elimination.enableEliminationByAffiliateEntity",
+    "elimination account key": "elimination.adjustmentGLAccount.key",
+    "elimination account id": "elimination.adjustmentGLAccount.id",
+    "elimination account name": "elimination.adjustmentGLAccount.name"
+  },
+
+  "ownership": {
+    "ownership key": "ownershipStructure.key",
+    "ownership id": "ownershipStructure.id",
+    "ownership description": "ownershipStructure.description"
+  },
+
+  "audit": {
+    "created": "audit.createdDateTime",
+    "modified": "audit.modifiedDateTime",
+    "created by key": "audit.createdByUser.key",
+    "created by": "audit.createdByUser.id",
+    "modified by key": "audit.modifiedByUser.key",
+    "modified by": "audit.modifiedByUser.id"
+  }
+}
